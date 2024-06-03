@@ -1,0 +1,964 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    height: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "monospace", sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+@font-face {
+    font-family: monospace;
+    src: url(/fonts/Montserrat/);
+}
+
+/* header */
+
+header {
+    background: url(images/bg-header.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* div-top-header */
+
+#div-top-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+#div-top-header h1 {
+    margin: 0;
+    font-size: 15px;
+    padding: 5px 15px;
+    color: white;
+}
+
+/* div-left-header */
+
+.div-left-header {
+    display: flex;
+    padding-top: 10px;
+}
+
+/* animation-ul-flag-icon-header */
+
+@keyframes ul-flag-icon-header {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        transform: translateY(-30px);
+    }
+}
+
+/* icon-flag-header */
+
+.icon-flag-header {
+    width: 20px;
+    margin-top: 5px;
+}
+
+#div-top-header>ul>li:hover>ul {
+    animation-name: ul-flag-icon-header;
+    animation-duration: 0.7s;
+    display: inline-block;
+    animation-fill-mode: forwards;
+}
+
+/* a-top-flag-header */
+
+.a-top-flag-header {
+    margin-top: 5px;
+}
+
+/* ul-flag-icon-header */
+
+.ul-flag-icon-header {
+    padding-left: 0;
+    margin-left: -15px;
+    width: 50px;
+    background-color: white;
+    display: inline-block;
+    display: none;
+    visibility: hidden;
+}
+
+/* li-flag-icon-header */
+
+.li-main-icon-flag {
+    padding-bottom: 30px;
+}
+
+.li-flag-icon-header {
+    padding: 5px;
+    margin-left: 9px;
+    display: inline-block;
+}
+
+.icon-flag-header.top {
+    display: flex;
+}
+
+/* div-right-header */
+
+.div-right-header {
+    display: flex;
+    padding-top: 10px;
+}
+
+/* icon-menu icon-search */
+
+.icon-search,
+.icon-menu {
+    width: 25px;
+}
+
+.a-icon-search,
+.a-icon-menu {
+    padding: 0 10px;
+}
+
+/* ul & li header */
+
+#div-top-header>div>ul>li:hover>ul {
+    display: inline-block;
+    animation-name: ul-flag-icon-header;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+#div-top-header>div>ul>li>a>h1 {
+    padding-bottom: 23px;
+}
+
+#div-top-header>div>ul {
+    position: relative;
+}
+
+#div-top-header>div>ul>li>ul {
+    position: absolute;
+    left: 0;
+    top: 150%;
+    display: none;
+}
+
+#div-top-header>div>ul>li>ul>a>li {
+    color: #000000;
+    padding: 20px 120px 20px 20px;
+    width: 100px;
+    background-color: rgb(245, 245, 245);
+}
+
+#div-top-header>div>ul>li>ul>a>li:hover {
+    background-color: white;
+}
+
+/* div-span-header */
+
+.div-span-header {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.div-span-header svg:nth-of-type(2) {
+    margin-left: -50px;
+}
+
+.div-span-header p {
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+/* div-felsh-header */
+
+.div-felsh-header {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.div-felsh-header:link {
+    transition-delay: 2s;
+}
+
+
+/* section THEGEM ............................................*/
+
+#THEGEM {
+    background: url(images/1-1\ \(1\).jpg);
+    background-size: contain;
+    width: 100%;
+    height: 800px;
+}
+
+.div-main-section-thegem {
+    padding-top: 20px;
+}
+
+.div-main-section-thegem>div {
+    padding-bottom: 47px;
+}
+
+.div-main-section-thegem>div:nth-of-type(4) {
+    display: inline-block;
+    margin-left: 150px;
+}
+
+/* div-list-section-thegem */
+
+.div-list-section-thegem {
+    display: inline-block;
+}
+
+.div-list-section-thegem svg {
+    padding: 10px 0;
+    margin-left: 10px;
+}
+
+.div-list-section-thegem div {
+    width: 5px;
+    height: 5px;
+    background-color: #c2526e;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+/* img div-main-section-thegem */
+
+.div-main-section-thegem>img {
+    position: absolute;
+    width: 500px;
+    right: 0;
+    top: 0;
+}
+
+/* section creative ........................................*/
+
+#creative {
+    background: url(images/2-1\ \(1\).jpg);
+    width: 100%;
+    height: 1454px;
+}
+
+.div-main-section-creative>div {
+    /* display: inline-block; */
+    text-align: center;
+}
+
+.div-main-section-creative>div:nth-of-type(1) {
+    padding-top: 180px;
+}
+
+.div-main-section-creative>div:nth-of-type(2) {
+    padding-top: 50px;
+}
+
+.div-main-section-creative>div:nth-of-type(3) {
+    padding-top: 50px;
+}
+
+.div-main-section-creative>div:nth-of-type(4) {
+    padding-top: 50px;
+}
+
+.div-main-section-creative>div:nth-of-type(5) {
+    padding-top: 50px;
+}
+
+
+/* div-3img  */
+
+.div-3img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-3img>div {
+    position: relative;
+}
+
+.div-3img>div img:nth-of-type(1) {
+    width: 130px;
+    position: absolute;
+    left: 25%;
+    top: 22%;
+}
+
+.div-3img>div:nth-of-type(3) img:nth-of-type(1) {
+    left: 27%;
+    top: 20%;
+}
+
+/* div-3img 1 2 3 */
+
+.div-3img>div:nth-of-type(1)>div img {
+    width: 145px !important;
+}
+
+.div-3img>div>div {
+    position: relative;
+}
+
+.div-3img>div>div img {
+    /* position: absolute; */
+    padding-top: 50px;
+    width: 180px !important;
+}
+
+.div-3img>div>div span {
+    color: #99a9b5;
+    font-size: 28px;
+    font-weight: 700;
+
+    position: absolute;
+    left: 15%;
+    top: 80px;
+}
+
+.div-3img>div:nth-of-type(2) div span {
+    left: 30%;
+}
+
+.div-3img>div:nth-of-type(3) div span {
+    left: 37%;
+}
+
+.div-3img>div>div>svg:nth-of-type(1) {
+    position: absolute;
+    top: 190px;
+    left: -50px;
+}
+
+.div-3img>div:nth-of-type(2)>div>svg:nth-of-type(1) {
+    left: 20px;
+}
+
+.div-3img>div:nth-of-type(3)>div>svg:nth-of-type(1) {
+    left: 20px;
+}
+
+.div-3img>div>div>svg:nth-of-type(2) {
+    position: absolute;
+    top: 250px;
+    left: -60px;
+    width: 400px;
+}
+
+
+/* section EXPERTISE ...................... */
+
+/* #EXPERTISE video {
+    width: 100%;
+    height: auto;
+} */
+
+/*  Video Background Start......................................... */
+
+#EXPERTISE {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+
+#EXPERTISE video {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/*  Video Background Finish......................................... */
+
+/* div-main-paragraph-cection-expertise */
+
+.div-main-paragraph-section-expertise {
+    position: absolute;
+    bottom: 700px;
+    left: 34%;
+}
+
+.div-main-paragraph-section-expertise>svg:nth-of-type(2) {
+    position: absolute;
+    left: -180px;
+    top: 70px;
+}
+
+/* div-model-section-expertise */
+
+.div-model-section-expertise>a>div span {
+    display: block;
+}
+
+.div-model-section-expertise>a>div {
+    width: 350px;
+    height: 350px;
+    background-color: #5f727f;
+    border: 1px solid #abb8c3;
+
+    position: absolute;
+    display: inline-block;
+    bottom: 100px;
+    text-align: center;
+}
+
+.div-model-section-expertise>a:nth-of-type(2)>div {
+    left: 0;
+}
+
+.div-model-section-expertise>a:nth-of-type(2)>div {
+    left: 34%;
+}
+
+.div-model-section-expertise>a:nth-of-type(3)>div {
+    right: 0;
+}
+
+/* .div-model-section-expertise div img nomber 1 */
+
+.div-model-section-expertise>a>div>img:nth-of-type(1) {
+    margin-top: 15%;
+
+}
+
+/* div-model-section-expertise span */
+
+.div-model-section-expertise>a>div span {
+    display: block;
+    font-size: 24px;
+    font-weight: 800;
+    color: #abb8c3;
+}
+
+
+/* .div-model-section-expertise>div paragraph */
+
+.div-model-section-expertise>a>div p {
+    width: 280px;
+    margin: 30px auto 0;
+    line-height: 25px;
+    color: #abb8c3;
+}
+
+/* .div-model-section-expertise>div :hover */
+
+.div-model-section-expertise>a>div:hover {
+    background-color: #848f9a;
+    transition-duration: 0.2s;
+}
+
+.div-model-section-expertise>a>div:hover * {
+    color: rgba(242, 242, 242, 0.783);
+}
+
+/* section AWARDS */
+
+#AWARDS {
+    background: url(images/bg\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-width: 100%;
+    height: 1322px;
+    /* background-size: contain; */
+}
+
+/* div-svg-section-awards */
+
+.div-svg-section-awards svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.div-svg-section-awards>svg:nth-of-type(1) {
+    padding-top: 50px;
+}
+
+.div-svg-section-awards>svg:nth-of-type(2) {
+    padding-top: 50px;
+}
+
+/* div-main-section-awards */
+
+.div-main-section-awards>div {
+    display: flex;
+}
+
+.div-main-section-awards>div:nth-of-type(1) {
+    justify-content: space-between;
+
+    padding-top: 80px;
+}
+
+.div-main-section-awards>div:nth-of-type(2) {
+    padding-top: 150px;
+    justify-content: space-between;
+
+}
+
+/* div-footer-section-awards */
+
+.div-footer-section-awards>div>svg:nth-of-type(1) {
+    position: absolute;
+    bottom: 30%;
+    left: 37.8%;
+}
+
+.div-footer-section-awards>div>svg:nth-of-type(2) {
+    position: absolute;
+    bottom: 23%;
+    left: 29%;
+}
+
+.div-footer-section-awards>div>svg:nth-of-type(3) {
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+}
+
+.div-footer-section-awards>div>a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    position: absolute;
+    bottom: 6%;
+    left: 40%;
+    background-color: #ce93d8;
+    font-size: 20px;
+}
+
+.div-footer-section-awards>div>a:hover {
+    background-color: white;
+    color: #ce93d8;
+    transition-duration: 0.5s;
+}
+
+/* Footer Start...................................................... */
+/* Map Section............................................... */
+
+#map {
+    position: relative;
+    height: 800px;
+}
+
+#map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#map .whiteBackground {
+    background-color: var(--white);
+    opacity: 0.95;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+}
+
+#map .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#map span {
+    color: rgb(165, 165, 165);
+}
+
+#map img {
+    width: 70%;
+}
+
+#map .hoursHere {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#map .hoursHere>div:first-of-type {
+    width: 20%;
+    margin-bottom: 7%;
+}
+
+
+
+/* Info Section............................................... */
+
+#info {
+    background-image: radial-gradient(circle, rgba(101, 52, 146, 0.911),
+            hsl(240, 35%, 22%), rgba(101, 52, 146, 0.911));
+    height: 750px;
+}
+
+#info .container {
+    height: 750px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#info .container>div {
+    width: 30%;
+    height: 100%;
+    margin-top: 25%;
+}
+
+/* Gem Logo */
+
+#info img {
+    width: 42%;
+    margin-top: 10%;
+}
+
+#info .gemLogo p {
+    width: 100%;
+    margin-top: 15%;
+}
+
+/* Email Us + News Letter > Input */
+
+#info input:focus,
+#info textarea:focus {
+    color: var(--white);
+}
+
+#info form>input,
+#info textarea,
+#info .newsletter>input {
+    background-color: rgb(102, 83, 135);
+    border: 1px solid rgb(162, 156, 183);
+    outline: none;
+    padding: 4%;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    width: 100%;
+    font-size: 60%;
+    margin-bottom: 8%;
+}
+
+/* Email Us */
+
+#info textarea {
+    resize: both;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+#info .emailUs button {
+    width: 100%;
+    outline: none;
+    padding: 4%;
+    border-radius: 5px;
+    border: none;
+    background-color: #ce93d8;
+    color: var(--white);
+    transition: background-color 0.25s, color 0.25s;
+}
+
+#info .emailUs button:hover {
+    background-color: rgb(169, 184, 195);
+    color: hsl(240, 35%, 22%);
+}
+
+/* News Letter */
+
+#info .newsletter p {
+    margin-bottom: 6%;
+}
+
+#info .stick {
+    position: relative;
+}
+
+#info .newsletter button {
+    background-image: url(images/forward-svgrepo-com.svg);
+    background-color: #ce93d8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    padding: 6%;
+    transition: background-color 0.25s;
+    position: absolute;
+    top: -72px;
+    right: -30px;
+}
+
+#info .newsletter button:hover {
+    background-color: #350058;
+}
+
+#info .newsletter span {
+    opacity: 0.5;
+}
+
+/* Copy Right Section............................................... */
+
+#cRight {
+    background-color: rgb(14, 11, 44);
+}
+
+#cRight .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 150px;
+}
+
+/* Codex */
+#cRight .codex,
+.links,
+.icons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+    color: #99a9b5;
+    ;
+}
+
+#cRight .codex span>a {
+    color: #ce93d8;
+    font-size: 100%;
+}
+
+
+#cRight .codex>span {
+    /* color:  #428bca; */
+}
+
+#cRight .codex span>a:hover {
+    text-decoration: underline;
+}
+
+/* Links */
+#cRight .links {
+    width: 45%;
+}
+
+
+
+#cRight .links a {
+    /* color:  #428bca; */
+    transition: color 0.25s;
+}
+
+#cRight .links a:hover {
+    color: #ce93d8;
+
+}
+
+#cRight .links a {
+    border-right: 1px solid #428bca;
+    padding: 0% 5% 0% 5%;
+}
+
+#cRight .links a:last-of-type {
+    border: none;
+}
+
+/* Icons */
+
+#cRight .icons a svg {
+    transition: fill .5s;
+}
+
+#cRight .icons a svg:hover {
+    fill: #ffff;
+}
+
+#cRight .icons a:nth-of-type(4) svg>path:hover {
+    fill: #ffff;
+}
+
+
+:root {
+    --white: #fcfcfc;
+}
+
+
+footer p,
+footer a,
+footer span,
+footer li,
+footer h1,
+footer h2,
+footer h3 {
+    color: var(--white);
+    font-family: 'Montserrat';
+    text-decoration: none;
+}
+
+footer h2 {
+    font-size: 100%;
+}
+
+footer h4 {
+    font-family: 'Montserrat';
+}
+
+footer p,
+footer a,
+footer span,
+footer li {
+    font-size: 57.75%;
+}
+
+footer p {
+    line-height: 200%;
+    margin: 0%;
+}
+
+
+/* section fixed */
+
+#section-fixed {
+
+    position: fixed;
+    right: 0;
+    bottom: 15%;
+}
+
+#section-fixed>div {
+    text-align: right;
+}
+
+#section-fixed>div>div:nth-of-type(1) {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    background-color: #06060f86;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#section-fixed>div>div:nth-of-type(1) p {
+    font-size: 13px;
+    margin-top: 17px;
+    color: white;
+}
+
+#section-fixed>div>div:nth-of-type(2) {
+    display: inline-block;
+    width: 90px;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+
+}
+
+#section-fixed>div>div:nth-of-type(2):hover {
+    transition-duration: 0.5s;
+    background-color: white;
+}
+
+#section-fixed>div>div:nth-of-type(2) span {
+    color: white;
+    position: absolute;
+}
+
+#section-fixed>div>div:nth-of-type(2) span:nth-of-type(1) {
+    top: 15%;
+    right: 25%;
+}
+
+#section-fixed>div>div:nth-of-type(2) span:nth-of-type(2) {
+    top: 50%;
+    right: 15%;
+}
+
+#section-fixed>div>div:nth-of-type(2):hover span {
+    transition-duration: 0.5s;
+    color: black;
+}
+
+#section-fixed>div>div:nth-of-type(3) {
+    width: 90px;
+    height: 60px;
+    background-color: #00bcd4;
+    text-align: center;
+    display: inline-block;
+}
+
+#section-fixed>div>div:nth-of-type(3):hover {
+    background-color: black;
+    transition-duration: 0.5s;
+}
+
+#section-fixed>div>div:nth-of-type(3):hover span {
+    color: white;
+    transition-duration: 0.5s;
+}
+
+#section-fixed>div>div:nth-of-type(3)>span {
+    font-size: 14px;
+}
+
+#section-fixed>div>div:nth-of-type(4)>a {
+    width: 60px;
+    height: 60px;
+    background-color: #06060f86;
+    display: inline-block;
+    margin-right: 30px;
+    text-align: center;
+
+}
+
+
+#section-fixed>div>div:nth-of-type(4)>a>svg {
+    margin-top: 24px;
+}
+
+/* svgs section-fixed  ......... */
+#section-fixed>div>svg:nth-of-type(1) {
+    margin: 0px 0 -8px -4px;
+}
+
+#section-fixed>div>div:nth-of-type(3)>svg {
+    margin-top: 10px;
+}
+
+
+#map iframe {
+    width: 99.8%;
+}
